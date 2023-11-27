@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="carousel.css"> <!-- Add your carousel styles here -->
+    <title>Engineering Career Counseling Dashboard</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+    </header>
+    <div class="container">
+        <div class="user-details">
+            <h2>User Details</h2>
+            <form id="user-details-form" action="/save-details" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class "form-group">
+                    <label for="email">Email Id</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="career-field">Select your Career Field</label>
+                    <select id="career-field" name="career-field">
+                        <option value="datasci">Data Science</option>
+                        <option value="entp">Entrepreneurship</option>
+                        <option value="developer">Software Developer</option>
+                    </select>
+                </div>
+                <button type="button" onclick="saveDetails()">Save Details</button>
+                <button type="button" id="next-button" onclick="redirectToCareerField()">Next</button>
+            </form>
+        </div>
+        <div class="dashboard-image">
+            <!-- Add your carousel of 4 images here -->
+            <div class="carousel-container">
+                <div class="carousel-content">
+                    <div class="carousel-box">
+                        <img src="C:\Users\Admin\Desktop\jfst mini pro\home1.png" alt="Data Science Image">
+                    </div>
+                    <div class="carousel-box">
+                        <img src="C:\Users\Admin\Desktop\jfst mini pro\home2.jfif" alt="Entrepreneurship Image">
+                    </div>
+                    <div class="carousel-box">
+                        <img src="C:\Users\Admin\Desktop\jfst mini pro\home3.jfif" alt="Software Developer Image">
+                    </div>
+                    <div class="carousel-box">
+                        <img src="C:\Users\Admin\Desktop\jfst mini pro\home4.png" alt="Image 4">
+                    </div>
+                    <div class="carousel-box">
+                        <img src="C:\Users\Admin\Desktop\jfst mini pro\home5.jfif" alt="Image 5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="carousel.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

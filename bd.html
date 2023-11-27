@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backend Developer</title>
+    <link rel="stylesheet" type="text/css" href="devstyles.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Backend Developer</h1>
+    </div>
+    <div id="content">
+        <div class="subject-box">
+            <h2>Database Management System</h2>
+            <p>DBMS covers a wide range of Programming technologies for backend development and database management.</p>
+            <label for="subjectSelectDBMS">Course Details :</label>
+            <select id="subjectSelectDBMS"></select>
+            <button type="button" onclick="loadSubjectDetails('DBMS')">Get Details</button>
+            <br><br>
+            <table id="subjectDetailsDBMS"></table>
+            <a href="dbms.html" class="button">Learn More</a>
+        </div>
+        <div class="subject-box">
+            <h2>Data Structures and Algorithm</h2>
+            <p>DSA is a critical aspect of the software development process to ensure the quality and reliability of software applications.</p>
+            <label for="subjectSelectDSA">Course Details :</label>
+            <select id="subjectSelectDSA"></select>
+            <button type="button" onclick="loadSubjectDetails('DSA')">Get Details</button>
+            <br><br>
+            <table id="subjectDetailsDSA"></table>
+            <a href="dsa.html" class="button">Learn More</a>
+        </div>
+        <div class="subject-box">
+            <h2>FPL</h2>
+            <p>FPL practices focus on automating and improving the collaboration between development and IT operations teams.</p>
+            <label for="subjectSelectFPL">Course Details :</label>
+            <select id="subjectSelectFPL"></select>
+            <button type="button" onclick="loadSubjectDetails('FPL')">Get Details</button>
+            <br><br>
+            <table id="subjectDetailsDevOps"></table>
+            <a href="fpl.html" class ="button">Learn More</a>
+        </div>
+        
+    </div>
+
+    <script src="ds.js"></script>
+</body>
+</html>

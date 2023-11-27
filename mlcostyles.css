@@ -1,0 +1,89 @@
+/* mlcostyle.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #82c9df;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.career-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.career-field {
+    width: 250px;
+    background-color: #1e81dd;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.career-field:hover {
+    transform: translateY(-10px);
+}
+
+.career-field img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    color: black;
+}
+/* mlcostyle.css */
+
+/* ... previous CSS code ... */
+
+#content {
+    margin-top: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black; /* Green color for the selected career text */
+}
+
+
+#content {
+    animation: fadeIn 0.5s ease; /* Add fadeIn animation with 0.5s duration */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+/* carousel.css - CSS for the carousel */
+/* carousel.css - CSS for the carousel */
+.carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    
+}
+
+/* Add more styles for buttons, if necessary */
+
+
+.carousel-content {
+    display: flex;
+    transition: transform 1.0s;
+}
+
+.carousel-box {
+    flex: 0 0 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: 10px;
+    overflow: auto;
+}
+
+/* Add more styles for buttons, if necessary */
